@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoDale - Juntos por um futuro mais limpo e sustentável</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f9f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #2e7d32;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 2px 5px #1b5e20;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #e8f5e9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #2e7d32;
+        }
+
+        iframe {
+            margin-top: 10px;
+            border: 2px solid #2e7d32;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #2e7d32;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        form label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        form input, form button {
+            display: block;
+            margin: 5px 0;
+            padding: 10px;
+            font-size: 1rem;
+        }
+
+        form button {
+            background-color: #2e7d32;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #1b5e20;
+        }
+
+        .video iframe {
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EcoDale</h1>
+        <nav>
+            <ul>
+                <li><a href="#mapa">Mapa de Locais de Descarte</a></li>
+                <li><a href="#informacoes">Informações de Reciclagem</a></li>
+                <li><a href="#agendamento">Agendamento de Coleta</a></li>
+                <li><a href="#videos">Vídeos Educativos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="mapa">
+        <h2>Mapa de Locais de Descarte</h2>
+        <p>Veja o local do bairro Rochdale em Osasco no mapa abaixo:</p>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.7786455331666!2d-46.7857598!3d-23.5703544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce8c78aaf6bbd3%3A0x4b37e5b5df2d354c!2sRochdale%2C%20Osasco%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1699983639565!5m2!1spt-BR!2sbr" 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+    <section id="informacoes">
+        <h2>Informações sobre Reciclagem</h2>
+        <p>Aqui você encontra os tipos de resíduos que podem ser reciclados e como separar corretamente.</p>
+        <ul>
+            <li><strong>Papel:</strong> Caixas, jornais, revistas, etc.</li>
+            <li><strong>Plástico:</strong> Garrafas PET, embalagens plásticas, etc.</li>
+            <li><strong>Vidro:</strong> Garrafas e frascos de vidro.</li>
+            <li><strong>Metais:</strong> Latas de alumínio, latas de aço, etc.</li>
+        </ul>
+    </section>
+
+    <section id="agendamento">
+        <h2>Agendamento de Coleta Seletiva</h2>
+        <p>Agende a coleta de resíduos recicláveis na sua casa.</p>
+        <form>
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço" required>
+            <label for="data">Data de Coleta:</label>
+            <input type="date" id="data" name="data" required>
+            <button type="submit">Agendar Coleta</button>
+        </form>
+    </section>
+
+    <section id="videos">
+        <h2>Vídeos Educativos</h2>
+        <p>Assista a vídeos sobre como descartar corretamente seus resíduos.</p>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EXEMPLO_VIDEO1" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EXEMPLO_VIDEO2" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 EcoDale - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
